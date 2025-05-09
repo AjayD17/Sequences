@@ -1,1 +1,1 @@
-web: gunicorn sequences.wsgi
+web: gunicorn myproject.wsgi
