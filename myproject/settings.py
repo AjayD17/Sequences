@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-y8i&bdxjxdsxge!sn5w$(o1mbvc&b)w@gv4_dtz6*!v1fq#5d!
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['sequences.onrender.com']  # Replace with your actual render domain
+ALLOWED_HOSTS = ['Sequences.onrender.com']  # Replace with your actual render domain
 
 
 # Application definition
