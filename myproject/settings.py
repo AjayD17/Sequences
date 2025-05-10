@@ -79,15 +79,16 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+import os
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sequence_analysis_db',
-        'USER': 'root',
-        'PASSWORD': 'Ajay@#1712',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': os.environ.get('sequence_analysis_db'),
+        'USER': os.environ.get('root'),
+        'PASSWORD': os.environ.get('Ajay@#1712'),
+        'HOST': os.environ.get('localhost'),
+        'PORT': os.environ.get('3306'),
     }
 }
 
@@ -127,6 +128,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+ALLOWED_HOSTS = ['*']  # Or add your Render domain
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
