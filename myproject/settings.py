@@ -84,11 +84,11 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('sequence_analysis_db'),
-        'USER': os.environ.get('root'),
-        'PASSWORD': os.environ.get('Ajay@#1712'),
-        'HOST': os.environ.get('localhost'),
-        'PORT': os.environ.get('3306'),
+        'NAME': 'sequence_analysis_db',
+        'USER': 'root',
+        'PASSWORD': 'Ajay@#1712',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
